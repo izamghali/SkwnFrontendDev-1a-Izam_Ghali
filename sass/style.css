@@ -4,15 +4,20 @@ body {
 body .navbar {
   z-index: 1;
   background-color: #fff;
-  padding-inline: 5%;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.02);
+  padding-inline: 6.25rem;
+  height: 8rem;
+}
+@media (max-width: 1200px) {
+  body .navbar {
+    padding-inline: 5%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
 }
 body .navbar li a:not(#signUpBtn), body .navbar a:not(#signUpBtn) {
   color: #000;
-}
-body .navbar #signUpBtn {
-  color: #2F241F;
-  background-color: #E5F0B6;
-  border-radius: 8px;
 }
 @media (max-width: 992px) {
   body .navbar .navbar-toggler {
@@ -79,20 +84,38 @@ body .navbar .navbar-list .navbar-hidden-layer {
     display: none;
   }
 }
+body .navbar #navbarListLeft .navbar-nav {
+  gap: 0.3rem;
+}
+@media (min-width: 992px) {
+  body .navbar #navbarListLeft .navbar-nav {
+    gap: 3rem;
+  }
+}
 @media (max-width: 992px) {
-  body .navbar #navbarRight {
+  body .navbar #navbarListRight {
     display: none !important;
   }
 }
-body .navbar #navbarRight ul {
+body .navbar #navbarListRight .navbar-nav {
   gap: 1rem;
+}
+body .navbar #signUpBtn {
+  color: #2F241F;
+  background-color: #E5F0B6;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+}
+body .navbar #signUpBtn:hover {
+  cursor: pointer;
 }
 body .navbar #shoppingBag {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.75rem;
   border: none;
   background-color: #2F241F;
   border-radius: 8px !important;
@@ -108,16 +131,17 @@ body #heroContainer {
     height: auto;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   body #heroContainer .hero-title-block {
-    padding-block: 1.5rem;
+    padding-inline: 5% !important;
   }
 }
 @media (max-width: 992px) {
   body #heroContainer .hero-title-block {
+    padding-block: 1.5rem;
+    padding-inline: 5%;
     text-align: center;
     width: 100%;
-    padding-inline: 5%;
   }
 }
 @media (min-width: 992px) {
@@ -126,29 +150,40 @@ body #heroContainer {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    padding-inline: 12%;
+    padding-inline: 8.88rem;
   }
 }
 body #heroContainer .hero-title-block h1 {
-  font-family: "Inter", sans-serif;
-  font-weight: 1000;
   color: #2F241F;
-  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.045rem;
+}
+@media (min-width: 1200px) {
+  body #heroContainer .hero-title-block h1 {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  body #heroContainer .hero-title-block h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  body #heroContainer .hero-title-block h1 {
+    padding-inline: 20%;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  body #heroContainer .hero-title-block h1 {
+    padding-inline: 0%;
+  }
 }
 body #heroContainer .hero-title-block h1 span {
   color: #817253;
-}
-@media (max-width: 992px) {
-  body #heroContainer .hero-title-block h1 {
-    padding-inline: 10%;
-  }
-}
-@media (min-width: 992px) {
-  body #heroContainer .hero-title-block h1 {
-    text-align: start;
-    width: 100%;
-    font-size: 4rem;
-  }
 }
 body #heroContainer .hero-title-block .hero-buttons-block {
   display: flex;
@@ -175,6 +210,17 @@ body #heroContainer .hero-title-block .hero-buttons-block button {
 @media (min-width: 992px) {
   body #heroContainer .hero-title-block .hero-buttons-block button {
     padding: 22px 36px;
+  }
+}
+@media (max-width: 768px) {
+  body #heroContainer .hero-title-block .hero-buttons-block button {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  body #heroContainer .hero-title-block .hero-buttons-block button {
+    width: 80%;
+    font-size: 0.8rem;
   }
 }
 body #heroContainer .hero-title-block .hero-buttons-block #heroSearch {

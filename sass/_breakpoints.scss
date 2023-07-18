@@ -1,0 +1,53 @@
+// bootstrap breakpoints
+@mixin bootstrap-sm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+@mixin bootstrap-md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+@mixin bootstrap-lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+@mixin bootstrap-xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin bootstrap-xxl {
+    @media (min-width: 1400px) {
+        @content;
+    }
+}
+
+// standard breakpoints
+@mixin standard-sm {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+@mixin standard-md {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin standard-lg {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+@mixin standard-xl {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin standard-xxl {
+    @media (max-width: 1400px) {
+        @content;
+    }
+}

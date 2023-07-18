@@ -1,0 +1,159 @@
+@import "./breakpoints";
+@import "./variables";
+
+body {
+    background-color: $standard-primary-color;
+    
+    .navbar {
+        z-index: 1;
+        background-color: $standard-primary-color;
+        padding-inline: 5%;
+        
+        li a, a {
+            &:not(#signUpBtn) {
+                color: $standard-text-black-color;
+            }
+        }
+
+        #signUpBtn {
+            color: $standard-secondary-color-1;
+            background-color: $standard-accent-color-1;
+            border-radius: $standard-radius-1;
+        }
+
+        .navbar-toggler {
+            .navbar-toggler-stripes {
+                width: 1rem;
+                height: 0.1rem;
+                margin-block: 4px;
+                border-radius: 10px;
+            }
+        }
+
+        .navbar-list {
+            display: flex;
+            justify-content: end;
+            @include standard-lg {
+                padding: 1rem;
+                position: absolute;
+                top: 100%;
+                right: 0%;
+                z-index: 10;
+                border-bottom-left-radius: 10px;
+            }
+
+            #dropdownList { 
+                ul {
+                    padding-block: 0;
+                    overflow: hidden;
+                    li {
+                        button {
+                            // color: $color-4;
+                            @include bootstrap-lg {
+                                height: 2.2rem;
+                            }
+                        }
+                        hr { margin-block: 0rem; }
+                    }
+                }
+            }
+
+            .navbar-hidden-layer {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100vw;
+                height: 100vh;
+                display: none;
+            }
+        }
+
+        #navbarCenterVanish {
+            @include bootstrap-lg { display: none; }
+
+        }
+
+        #navbarRight {
+            @include standard-lg { display: none !important; }
+
+            ul {
+                gap: 1rem;
+            }
+        }
+
+        #shoppingBag {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            border: none;
+            background-color: $standard-secondary-color-1;
+            border-radius: $standard-radius-1 !important;
+        }
+    }
+
+    #heroContainer {
+        display: flex;
+        // border: solid red;
+        background-color: $standard-primary-color;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        
+        .hero-title-block {
+            // border: solid green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+            padding-inline: 12%;
+            h1 {
+                font : {
+                    family:'Inter', sans-serif;
+                    size: 4rem;
+                    weight: 1000;
+                }
+                color: $standard-secondary-color-1;
+                span { color: $standard-accent-color-2; }
+            }
+
+            .hero-buttons-block {
+                // border: solid orange;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+
+                button {
+                    padding: 22px 36px;
+                    border-radius: $standard-radius-2;
+                    letter-spacing: 0.2rem;
+                    width: 100%;
+                }
+                
+                #heroSearch {
+                    background-color: $standard-accent-color-1;
+                    border: none;
+                }
+                
+                #heroWatch {
+                    background-color: $standard-primary-color;
+                    border: solid $standard-secondary-color-1;
+                }
+
+        
+            }
+        }
+
+        .hero-product-block {
+            // border: solid black;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}

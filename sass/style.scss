@@ -136,12 +136,12 @@ body {
 
     #heroContainer {
         background-color: $standard-primary-color;
-        
         display: block;
         padding: 0;
+        // border: solid orange;
+        height: auto;
         @include bootstrap-lg {
             display: flex;
-            height: auto;
         }
         
         .hero-title-block {
@@ -149,7 +149,6 @@ body {
             @include standard-xl {
                 padding-inline: 5% !important;
             }
-
             @include standard-lg {
                 padding-block: 1.5rem;
                 padding-inline: 5%;
@@ -258,6 +257,44 @@ body {
                     height: 30vh;
                 }
 
+                @include bootstrap-lg {
+                    // border: solid black;
+                    object-fit: contain;
+                    // position: absolute;
+                }
+                
+                @include bootstrap-xl {
+                }
+
+            }
+
+            #heroProductHighlighted {
+                @include bootstrap-lg {
+                    display: none;
+                }
+            }
+
+            .hero-product-text-block {
+                display: flex;
+                flex-direction: column;
+                @include bootstrap-lg {
+                    border: solid red;
+                }
+                
+                @include bootstrap-xl {
+                    border: solid greenyellow;
+                    position: absolute;
+                    bottom: 2.3%;
+                    padding-left: 4%;
+                    padding-bottom: 10%;
+
+                }
+
+                #heroProductPrice {
+                    border-radius: 0.75rem;
+                    background: rgba(255, 255, 255, 0.50);
+                }
+
             }
         }
     }
@@ -307,6 +344,27 @@ body {
         padding: 5rem 8.875rem;
         align-items: center;
         gap: 9.375rem;
+    }
+
+    footer {
+        border: solid black;
+        @include bootstrap-lg {
+            display: flex;
+            padding-inline: 6.25rem;
+            padding-block: 5.81rem;
+        }
+        .footer-block {
+
+        }
+
+        .footer-left-block {
+            border: solid orange;
+        }
+
+        .footer-right-block {
+            display: flex;
+            border: solid green;
+        }
     }
 
 }

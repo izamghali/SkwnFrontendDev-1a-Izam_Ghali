@@ -6,7 +6,7 @@ $(document).ready(function() {
         let $togglerAnimation = gsap.timeline({ paused: true });
         $togglerAnimation
             .to('.stripe3', { opacity: 0 })
-            .to('.stripe1', { position: "sticky", rotate: 135, y: "5" }, "<")
+            .to('.stripe1', { position: "sticky", rotate: 135, y: "7", width: '100%' }, "<")
             .to('.stripe2', { position: "sticky", rotate: 45, y: "0" }, "<");
 
         if (window.matchMedia("(max-width:991px)").matches) {
@@ -21,6 +21,7 @@ $(document).ready(function() {
 
             $('.navbar-hidden-layer').not('.navbar-list').on('click', () => {
                 $togglerAnimation.reverse();
+                gsap.to('.stripe1', { width: '50%' })
                 $('.navbar-list').slideUp();
                 $togglerState = true;
             });

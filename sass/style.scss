@@ -22,11 +22,28 @@ body {
         }
 
         .navbar-toggler {
-            .navbar-toggler-stripes {
-                width: 1rem;
-                height: 0.1rem;
-                margin-block: 4px;
-                border-radius: 10px;
+            @include standard-lg {
+                padding: 0.5rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 0.3rem;
+                .navbar-toggler-stripes {
+                    height: 0.2rem;
+                    border-radius: 8px;
+                    background-color: $standard-text-black-color;
+                }
+                .stripe1 {
+                    width: 50%;
+                }
+                .stripe2 {
+                    width: 100%;
+                }
+                .stripe3 {
+                    width: 70%;
+                }
             }
         }
 

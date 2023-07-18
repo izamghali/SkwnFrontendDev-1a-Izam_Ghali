@@ -218,4 +218,51 @@ body {
         }
     }
 
+    #whyUsContainer {
+        // border: solid red;
+        // padding-inline: 5%;
+        background-color: $standard-secondary-color-1;
+        color: $standard-accent-color-1;
+        // padding: 5%;
+
+
+        // figma code
+        display: flex;
+        padding: 4.5rem 8.875rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+
+        #whyUsBottom {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+
+            .why-text-icon {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                .why-icon-frame {
+                    display: flex;
+                    padding: 0.5rem;
+                    align-items: flex-start;
+                    gap: 0.5rem;
+                    border-radius: 0.5rem;
+                    background: #F4F4F4;
+                }
+            }
+        }
+
+    }
+
+    #partnerContainer {
+        // background-color: $standard-secondary-color-2;
+        // height: 20vh;
+
+        display: flex;
+        padding: 5rem 8.875rem;
+        align-items: center;
+        gap: 9.375rem;
+    }
+
 }

@@ -69,7 +69,6 @@ body {
                     overflow: hidden;
                     li {
                         button {
-                            // color: $color-4;
                             @include bootstrap-lg {
                                 height: 2.2rem;
                             }
@@ -136,12 +135,11 @@ body {
 
     #heroContainer {
         background-color: $standard-primary-color;
-        display: block;
+        display: flex;
         padding: 0;
-        // border: solid orange;
         height: auto;
-        @include bootstrap-lg {
-            display: flex;
+        @include standard-lg {
+            display: block;
         }
         
         .hero-title-block {
@@ -240,15 +238,13 @@ body {
         }
 
         .hero-product-block {
-            // background-color: red;
-            z-index: 1;
+            background-color: red;
             @include standard-lg {
                 width: 100vw;
             }
 
             img {
                 width: 100%;
-                z-index: 0;
                 object-fit: cover;
                 @include standard-lg {
                     height: 50vh;
@@ -258,9 +254,7 @@ body {
                 }
 
                 @include bootstrap-lg {
-                    // border: solid black;
                     object-fit: contain;
-                    // position: absolute;
                 }
                 
                 @include bootstrap-xl {
@@ -347,23 +341,61 @@ body {
     }
 
     footer {
-        border: solid black;
-        @include bootstrap-lg {
-            display: flex;
-            padding-inline: 6.25rem;
-            padding-block: 5.81rem;
+        p, a {
+            color: $standard-grey-color;
+            text-decoration: none;
         }
-        .footer-block {
+        a { &:hover { text-decoration: underline; } }
+        
+        display: flex;
+        padding-inline: 6.25rem;
+        padding-block: 5.81rem;
+        gap: 1.5rem;
 
+        @include standard-lg {
+            text-align: center;
+        }
+        
+        @include standard-lg {
+            padding-block: 2.24rem 5.19rem;
+            padding-inline: 1rem;
+            display: block;
         }
 
         .footer-left-block {
-            border: solid orange;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            @include standard-lg { margin-bottom: 1rem; }
+            #footerCopyRight {
+                margin-bottom: 0;
+                @include standard-lg { display: none; }
+            }
         }
 
         .footer-right-block {
             display: flex;
-            border: solid green;
+            gap: 3.25rem;
+            justify-content: flex-end;
+            
+            @include bootstrap-xl {
+                align-items: start;
+            }
+        
+            @include standard-lg {
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            // @include bootstrap-xl { background-color:darkgrey; }
+            // @include standard-xl { background-color: orange;}
+            // @include standard-lg { background-color: deepskyblue; }
+            // @include standard-md { background-color:indianred}
+            // @include standard-sm { background-color:forestgreen; }
+
+            .footer-right-sub-block {
+                h5 { @include bootstrap-xl { margin-bottom: 1.5rem; } }
+            }
         }
     }
 

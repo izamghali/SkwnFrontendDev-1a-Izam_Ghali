@@ -122,13 +122,13 @@ body .navbar #shoppingBag {
 }
 body #heroContainer {
   background-color: #fff;
-  display: block;
+  display: flex;
   padding: 0;
   height: auto;
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   body #heroContainer {
-    display: flex;
+    display: block;
   }
 }
 @media (max-width: 1200px) {
@@ -237,7 +237,7 @@ body #heroContainer .hero-title-block .hero-buttons-block #heroWatch {
   }
 }
 body #heroContainer .hero-product-block {
-  z-index: 1;
+  background-color: red;
 }
 @media (max-width: 992px) {
   body #heroContainer .hero-product-block {
@@ -246,7 +246,6 @@ body #heroContainer .hero-product-block {
 }
 body #heroContainer .hero-product-block img {
   width: 100%;
-  z-index: 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -327,19 +326,66 @@ body #partnerContainer {
   gap: 9.375rem;
 }
 body footer {
-  border: solid black;
+  display: flex;
+  padding-inline: 6.25rem;
+  padding-block: 5.81rem;
+  gap: 1.5rem;
 }
-@media (min-width: 992px) {
+body footer p, body footer a {
+  color: #667085;
+  text-decoration: none;
+}
+body footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 992px) {
   body footer {
-    display: flex;
-    padding-inline: 6.25rem;
-    padding-block: 5.81rem;
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  body footer {
+    padding-block: 2.24rem 5.19rem;
+    padding-inline: 1rem;
+    display: block;
   }
 }
 body footer .footer-left-block {
-  border: solid orange;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (max-width: 992px) {
+  body footer .footer-left-block {
+    margin-bottom: 1rem;
+  }
+}
+body footer .footer-left-block #footerCopyRight {
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  body footer .footer-left-block #footerCopyRight {
+    display: none;
+  }
 }
 body footer .footer-right-block {
   display: flex;
-  border: solid green;
+  gap: 3.25rem;
+  justify-content: flex-end;
+}
+@media (min-width: 1200px) {
+  body footer .footer-right-block {
+    align-items: start;
+  }
+}
+@media (max-width: 992px) {
+  body footer .footer-right-block {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1200px) {
+  body footer .footer-right-block .footer-right-sub-block h5 {
+    margin-bottom: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

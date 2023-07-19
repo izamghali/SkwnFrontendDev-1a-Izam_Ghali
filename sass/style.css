@@ -508,7 +508,7 @@ body #recSection {
 body #recSection .rec-image-block {
   padding: 0;
   border: solid red;
-  display: flex;
+  display: none;
 }
 @media (min-width: 992px) {
   body #recSection .rec-image-block {
@@ -687,7 +687,7 @@ body #productSection .product-top .product-more button {
   }
 }
 body #productSection .product-carousel {
-  display: flex;
+  display: none;
 }
 @media (min-width: 992px) {
   body #productSection .product-carousel {
@@ -735,31 +735,115 @@ body #newsletter {
 body #newsletter:not(input) {
   color: #2F241F;
 }
+@media (max-width: 1200px) {
+  body #newsletter {
+    padding-inline: 4rem;
+  }
+}
+@media (max-width: 992px) {
+  body #newsletter {
+    padding-inline: 3rem;
+  }
+}
 @media (max-width: 576px) {
   body #newsletter {
-    padding-inline: 1rem;
+    padding-inline: 2rem;
     padding-block: 2rem;
     text-align: center;
   }
 }
-body #newsletter input, body #newsletter button {
-  border: solid red;
+body #newsletter h2, body #newsletter input, body #newsletter p {
+  font-family: Inter;
+  color: #2F241F;
+  font-style: normal;
+}
+body #newsletter p {
+  font-weight: 400;
+}
+@media (min-width: 992px) {
+  body #newsletter p {
+    font-size: 1.5rem;
+    line-height: 2.25rem; /* 150% */
+  }
+}
+@media (max-width: 992px) {
+  body #newsletter p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  body #newsletter p {
+    font-size: 0.875rem;
+  }
+}
+body #newsletter h2 {
+  font-weight: 700;
+  line-height: normal;
+}
+@media (min-width: 992px) {
+  body #newsletter h2 {
+    font-size: 4rem;
+    letter-spacing: -0.04rem;
+  }
+}
+@media (max-width: 992px) {
+  body #newsletter h2 {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 768px) {
-  body #newsletter input, body #newsletter button {
-    padding: 1rem;
+  body #newsletter h2 {
+    font-size: 2rem;
   }
+}
+@media (max-width: 576px) {
+  body #newsletter h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+body #newsletter input, body #newsletter button {
+  border: none;
+  padding: 1rem;
 }
 body #newsletter input {
   color: #553B33;
+  width: 36.4375rem;
+  font-family: Inter;
+  font-weight: 400;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+@media (min-width: 992px) {
+  body #newsletter input {
+    padding: 1.38rem 2.25rem;
+    font-size: 1.5rem;
+    line-height: 2.25rem; /* 150% */
+    letter-spacing: -0.015rem;
+  }
 }
 body #newsletter button {
   background-color: #E5F0B6;
+  transition: 350ms;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+@media (min-width: 992px) {
+  body #newsletter button {
+    padding: 1.75rem;
+  }
+}
+body #newsletter button:hover {
+  background-color: hsl(72, 66%, 75%);
+  cursor: pointer;
+}
+body #newsletter .newsletter-email {
+  display: flex;
 }
 body footer {
   display: flex;
   padding-inline: 6.25rem;
-  padding-block: 5.81rem;
+  padding-block: 5.2rem 5.81rem;
   gap: 1.5rem;
 }
 body footer p, body footer a {
@@ -768,11 +852,6 @@ body footer p, body footer a {
 }
 body footer a:hover {
   text-decoration: underline;
-}
-@media (max-width: 576px) {
-  body footer {
-    padding-block: 2.24 5.19rem;
-  }
 }
 @media (max-width: 992px) {
   body footer {

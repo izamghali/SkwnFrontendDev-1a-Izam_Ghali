@@ -3,7 +3,6 @@
 
 body {
     background-color: $standard-primary-color-1;
-    
     .navbar {
         z-index: 1;
         background-color: $standard-primary-color-1;
@@ -459,7 +458,7 @@ body {
         .rec-image-block {
             padding: 0;
             border: solid red;
-            display: flex;
+            display: none;
             @include bootstrap-lg {
                 gap: 1.5rem;
                 justify-content: space-between;
@@ -625,7 +624,8 @@ body {
         }
 
         .product-carousel {
-            display: flex;
+            // display: flex;
+            display: none;
             @include bootstrap-lg {
                 // gap: 2.25rem;
                 // justify-content: space-between;
@@ -670,30 +670,74 @@ body {
         padding-inline: 8.88rem;
         padding-block: 5rem;
         background-color: $standard-primary-color-2; 
-        &:not(input) {
-            color: $standard-secondary-color-1;
-        }
-        
+        &:not(input) { color: $standard-secondary-color-1; }
+
+        @include standard-xl { padding-inline: 4rem; }
+        @include standard-lg { padding-inline: 3rem; }
         @include standard-sm {
-            padding-inline: 1rem;
+            padding-inline: 2rem;
             padding-block: 2rem;
             text-align: center;
         }
 
-        input, button {
-            border: solid red;
-            @include standard-md {
-                padding: 1rem;
-            }
+        h2, input, p {
+            font-family: Inter;
+            color: $standard-secondary-color-1;
+            font-style: normal;
         }
+
+        p {
+            font-weight: 400;
+            @include bootstrap-lg {
+                font-size: 1.5rem;
+                line-height: 2.25rem; /* 150% */
+            }
+            @include standard-lg { font-size: 1rem; }
+            @include standard-sm { font-size: 0.875rem; }
+        }
+
+        h2 {
+            font-weight: 700;
+            line-height: normal;
+            @include bootstrap-lg {
+                font-size: 4rem;
+                letter-spacing: -0.04rem;
+            }
+            @include standard-lg { font-size: 3rem; }
+            @include standard-md { font-size: 2rem; }
+            @include standard-sm { font-size: 1.3rem; margin-bottom: 1.5rem; }
+        }
+
+        input, button { border: none; padding: 1rem;  }
 
         input {
             color: $standard-secondary-color-2;
+            width: 36.4375rem;
+            font-family: Inter;
+            font-weight: 400;
+            border-top-left-radius: $standard-radius-1;
+            border-bottom-left-radius: $standard-radius-1;
+            @include bootstrap-lg {
+                padding: 1.38rem 2.25rem;
+                font-size: 1.5rem;
+                line-height: 2.25rem; /* 150% */
+                letter-spacing: -0.015rem;
+            }
         }
         
         button {
             background-color: $standard-accent-color-1;
+            transition: $standard-transition-duration;
+            border-top-right-radius: $standard-radius-1;
+            border-bottom-right-radius: $standard-radius-1;
+            @include bootstrap-lg { padding: 1.75rem; }
+            &:hover {
+                background-color: hsl(72, 66%, 75%);
+                cursor: pointer;
+            }
         }
+        
+        .newsletter-email { display: flex; }
     }
 
     footer {
@@ -705,12 +749,8 @@ body {
         
         display: flex;
         padding-inline: 6.25rem;
-        padding-block: 5.81rem;
+        padding-block: 5.2rem 5.81rem;
         gap: 1.5rem;
-        
-        @include standard-sm {
-            padding-block: 2.24 5.19rem;
-        }
         
         @include standard-lg {
             text-align: center;

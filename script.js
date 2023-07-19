@@ -29,6 +29,36 @@ $(document).ready(function() {
         }
     }
     navbarTogglerClick();
+
+    function categoryClicked() {
+        $('.rec-category-desc-block').hide();
+
+        $('#recBtn1').on('click', event => {
+            $(event.currentTarget).next().slideToggle(250);
+            $('#recDesc2').slideUp(250);
+            $('#recDesc3').slideUp(250);
+            $('#recDesc4').slideUp(250);
+        });
+        $('#recBtn2').on('click', event => {
+            $(event.currentTarget).next().slideToggle(250);
+            $('#recDesc1').slideUp(250);
+            $('#recDesc3').slideUp(250);
+            $('#recDesc4').slideUp(250);
+        });
+        $('#recBtn3').on('click', event => {
+            $(event.currentTarget).next().slideToggle(250);
+            $('#recDesc1').slideUp(250);
+            $('#recDesc2').slideUp(250);
+            $('#recDesc4').slideUp(250);
+        });
+        $('#recBtn4').on('click', event => {
+            $(event.currentTarget).next().slideToggle(250);
+            $('#recDesc1').slideUp(250);
+            $('#recDesc2').slideUp(250);
+            $('#recDesc3').slideUp(250);
+        });
+    }
+    categoryClicked();
 })
 
 // gsap

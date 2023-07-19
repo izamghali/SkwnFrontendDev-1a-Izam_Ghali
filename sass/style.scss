@@ -133,7 +133,7 @@ body {
         }
     }
 
-    #heroContainer {
+    #heroSection {
         background-color: $standard-primary-color-1;
         display: flex;
         padding: 0;
@@ -292,7 +292,7 @@ body {
         }
     }
 
-    #whyUsContainer {
+    #whyUsSection {
         background-color: $standard-secondary-color-1;
         &:not(.why-icon-frame) { color: $standard-accent-color-1; }
         
@@ -383,7 +383,7 @@ body {
 
     }
 
-    #partnerContainer {
+    #partnerSection {
         background-color: $standard-primary-color-2;
         display: flex;
         padding: 5rem 8.875rem;
@@ -443,6 +443,79 @@ body {
 
             .partner-logo {
                 svg { @include standard-sm { width: auto; height: 1.5rem; } }
+            }
+        }
+    }
+
+    #recSection {
+        padding: 5rem 0rem;
+        display: flex;
+        gap: 3rem;
+        justify-content: start;
+        flex-wrap: wrap-reverse;
+        @include standard-sm {
+            // padding: 1.5rem 1rem;
+        }
+        .rec-image-block {
+            padding: 0;
+            border: solid red;
+            display: flex;
+            @include bootstrap-lg {
+                gap: 1.5rem;
+                justify-content: space-between;
+            }
+
+            @include standard-md {
+                flex-direction: row;
+            }
+
+            @include standard-sm {
+                display: none;
+            }
+        }
+        
+        .rec-category-block {
+            border: solid black;
+            width: auto;
+
+            @include standard-lg {
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+
+            p, h3 {
+                color: $standard-secondary-color-1;
+                font-family: $standard-font-family;
+            }
+
+            p {
+                font-weight: 400;
+                @include bootstrap-lg {
+                    font-size: 1.5rem;
+                    letter-spacing: -0.015rem;
+                    line-height: 2.25rem; /* 150% */
+                }
+            }
+
+            h3 {
+                display: flex;
+                flex-wrap: wrap;
+                font-weight: 700;
+                width: min-content;
+                @include bootstrap-lg {
+                    font-size: 3rem;
+                    line-height: normal;
+                    letter-spacing: -0.03rem;
+                }
+            }
+
+            a {
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
     }

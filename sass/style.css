@@ -120,24 +120,24 @@ body .navbar #shoppingBag {
   background-color: #2F241F;
   border-radius: 8px !important;
 }
-body #heroContainer {
+body #heroSection {
   background-color: #fff;
   display: flex;
   padding: 0;
   height: auto;
 }
 @media (max-width: 992px) {
-  body #heroContainer {
+  body #heroSection {
     display: block;
   }
 }
 @media (max-width: 1200px) {
-  body #heroContainer .hero-title-block {
+  body #heroSection .hero-title-block {
     padding-inline: 5% !important;
   }
 }
 @media (max-width: 992px) {
-  body #heroContainer .hero-title-block {
+  body #heroSection .hero-title-block {
     padding-block: 1.5rem;
     padding-inline: 5%;
     text-align: center;
@@ -145,7 +145,7 @@ body #heroContainer {
   }
 }
 @media (min-width: 992px) {
-  body #heroContainer .hero-title-block {
+  body #heroSection .hero-title-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,7 +153,7 @@ body #heroContainer {
     padding-inline: 8.88rem;
   }
 }
-body #heroContainer .hero-title-block h1 {
+body #heroSection .hero-title-block h1 {
   color: #2F241F;
   font-family: "Inter", sans-serif;
   font-weight: 800;
@@ -161,125 +161,125 @@ body #heroContainer .hero-title-block h1 {
   letter-spacing: -0.045rem;
 }
 @media (min-width: 1200px) {
-  body #heroContainer .hero-title-block h1 {
+  body #heroSection .hero-title-block h1 {
     font-size: 4.5rem;
   }
 }
 @media (max-width: 1200px) {
-  body #heroContainer .hero-title-block h1 {
+  body #heroSection .hero-title-block h1 {
     font-size: 3rem;
   }
 }
 @media (max-width: 768px) {
-  body #heroContainer .hero-title-block h1 {
+  body #heroSection .hero-title-block h1 {
     padding-inline: 20%;
     font-size: 2rem;
   }
 }
 @media (max-width: 576px) {
-  body #heroContainer .hero-title-block h1 {
+  body #heroSection .hero-title-block h1 {
     padding-inline: 0%;
   }
 }
-body #heroContainer .hero-title-block h1 span {
+body #heroSection .hero-title-block h1 span {
   color: #817253;
 }
-body #heroContainer .hero-title-block .hero-buttons-block {
+body #heroSection .hero-title-block .hero-buttons-block {
   display: flex;
   gap: 1rem;
 }
 @media (min-width: 992px) {
-  body #heroContainer .hero-title-block .hero-buttons-block {
+  body #heroSection .hero-title-block .hero-buttons-block {
     display: flex;
     width: 100%;
     justify-content: space-between;
   }
 }
 @media (max-width: 576px) {
-  body #heroContainer .hero-title-block .hero-buttons-block {
+  body #heroSection .hero-title-block .hero-buttons-block {
     display: block;
   }
 }
-body #heroContainer .hero-title-block .hero-buttons-block button {
+body #heroSection .hero-title-block .hero-buttons-block button {
   padding: 1rem 1rem;
   border-radius: 12px;
   letter-spacing: 0.2rem;
   width: 100%;
 }
 @media (min-width: 992px) {
-  body #heroContainer .hero-title-block .hero-buttons-block button {
+  body #heroSection .hero-title-block .hero-buttons-block button {
     padding: 22px 36px;
   }
 }
 @media (max-width: 768px) {
-  body #heroContainer .hero-title-block .hero-buttons-block button {
+  body #heroSection .hero-title-block .hero-buttons-block button {
     font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
-  body #heroContainer .hero-title-block .hero-buttons-block button {
+  body #heroSection .hero-title-block .hero-buttons-block button {
     width: 80%;
     font-size: 0.8rem;
   }
 }
-body #heroContainer .hero-title-block .hero-buttons-block #heroSearch {
+body #heroSection .hero-title-block .hero-buttons-block #heroSearch {
   background-color: #E5F0B6;
   border: none;
 }
-body #heroContainer .hero-title-block .hero-buttons-block #heroWatch {
+body #heroSection .hero-title-block .hero-buttons-block #heroWatch {
   background-color: #fff;
   border: solid #2F241F;
 }
 @media (max-width: 576px) {
-  body #heroContainer .hero-title-block .hero-buttons-block #heroWatch {
+  body #heroSection .hero-title-block .hero-buttons-block #heroWatch {
     margin-top: 0.7rem;
   }
 }
-body #heroContainer .hero-product-block {
+body #heroSection .hero-product-block {
   background-color: red;
 }
 @media (max-width: 992px) {
-  body #heroContainer .hero-product-block {
+  body #heroSection .hero-product-block {
     width: 100vw;
   }
 }
-body #heroContainer .hero-product-block img {
+body #heroSection .hero-product-block img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 992px) {
-  body #heroContainer .hero-product-block img {
+  body #heroSection .hero-product-block img {
     height: 50vh;
   }
 }
 @media (max-width: 576px) {
-  body #heroContainer .hero-product-block img {
+  body #heroSection .hero-product-block img {
     height: 30vh;
   }
 }
 @media (min-width: 992px) {
-  body #heroContainer .hero-product-block img {
+  body #heroSection .hero-product-block img {
     -o-object-fit: contain;
        object-fit: contain;
   }
 }
 @media (min-width: 992px) {
-  body #heroContainer .hero-product-block #heroProductHighlighted {
+  body #heroSection .hero-product-block #heroProductHighlighted {
     display: none;
   }
 }
-body #heroContainer .hero-product-block .hero-product-text-block {
+body #heroSection .hero-product-block .hero-product-text-block {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 992px) {
-  body #heroContainer .hero-product-block .hero-product-text-block {
+  body #heroSection .hero-product-block .hero-product-text-block {
     border: solid red;
   }
 }
 @media (min-width: 1200px) {
-  body #heroContainer .hero-product-block .hero-product-text-block {
+  body #heroSection .hero-product-block .hero-product-text-block {
     border: solid greenyellow;
     position: absolute;
     bottom: 2.3%;
@@ -287,18 +287,18 @@ body #heroContainer .hero-product-block .hero-product-text-block {
     padding-bottom: 10%;
   }
 }
-body #heroContainer .hero-product-block .hero-product-text-block #heroProductPrice {
+body #heroSection .hero-product-block .hero-product-text-block #heroProductPrice {
   border-radius: 0.75rem;
   background: rgba(255, 255, 255, 0.5);
 }
-body #whyUsContainer {
+body #whyUsSection {
   background-color: #2F241F;
 }
-body #whyUsContainer:not(.why-icon-frame) {
+body #whyUsSection:not(.why-icon-frame) {
   color: #E5F0B6;
 }
 @media (min-width: 992px) {
-  body #whyUsContainer {
+  body #whyUsSection {
     display: flex;
     padding: 4.5rem 9.4%;
     flex-direction: column;
@@ -307,100 +307,100 @@ body #whyUsContainer:not(.why-icon-frame) {
   }
 }
 @media (max-width: 1200px) {
-  body #whyUsContainer {
+  body #whyUsSection {
     padding: 3.2rem 5%;
   }
 }
 @media (max-width: 992px) {
-  body #whyUsContainer {
+  body #whyUsSection {
     padding: 2rem 1.5rem;
   }
 }
 @media (max-width: 992px) {
-  body #whyUsContainer .why-us-top {
+  body #whyUsSection .why-us-top {
     text-align: center;
     margin-bottom: 2rem;
   }
 }
 @media (min-width: 1200px) {
-  body #whyUsContainer .why-us-top span {
+  body #whyUsSection .why-us-top span {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 992px) {
-  body #whyUsContainer .why-us-top span {
+  body #whyUsSection .why-us-top span {
     font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
-  body #whyUsContainer .why-us-top span {
+  body #whyUsSection .why-us-top span {
     font-size: 0.8rem;
   }
 }
-body #whyUsContainer .why-us-top h2 {
+body #whyUsSection .why-us-top h2 {
   margin-top: 2.5rem;
 }
 @media (min-width: 1200px) {
-  body #whyUsContainer .why-us-top h2 {
+  body #whyUsSection .why-us-top h2 {
     font-size: 4rem;
     padding-right: 10%;
   }
 }
 @media (max-width: 1200px) {
-  body #whyUsContainer .why-us-top h2 {
+  body #whyUsSection .why-us-top h2 {
     font-size: 3rem;
     margin-top: 1.5rem;
   }
 }
 @media (max-width: 768px) {
-  body #whyUsContainer .why-us-top h2 {
+  body #whyUsSection .why-us-top h2 {
     font-size: 2rem;
   }
 }
 @media (max-width: 576px) {
-  body #whyUsContainer .why-us-top h2 {
+  body #whyUsSection .why-us-top h2 {
     font-size: 1.5rem;
   }
 }
-body #whyUsContainer .why-us-bottom {
+body #whyUsSection .why-us-bottom {
   display: flex;
   align-items: center;
   gap: 4rem;
 }
 @media (max-width: 992px) {
-  body #whyUsContainer .why-us-bottom {
+  body #whyUsSection .why-us-bottom {
     flex-direction: column;
     align-items: start;
     gap: 1.25rem;
   }
 }
-body #whyUsContainer .why-us-bottom .why-text-icon {
+body #whyUsSection .why-us-bottom .why-text-icon {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 @media (min-width: 1200px) {
-  body #whyUsContainer .why-us-bottom .why-text-icon h3 {
+  body #whyUsSection .why-us-bottom .why-text-icon h3 {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 1200px) {
-  body #whyUsContainer .why-us-bottom .why-text-icon h3 {
+  body #whyUsSection .why-us-bottom .why-text-icon h3 {
     font-size: 1.2rem;
   }
 }
 @media (max-width: 576px) {
-  body #whyUsContainer .why-us-bottom .why-text-icon h3 {
+  body #whyUsSection .why-us-bottom .why-text-icon h3 {
     font-size: 0.9375rem;
     line-height: 1.5rem; /* 160% */
   }
 }
-body #whyUsContainer .why-us-bottom .why-text-icon .why-icon-frame {
+body #whyUsSection .why-us-bottom .why-text-icon .why-icon-frame {
   padding: 0.5rem;
   border-radius: 0.5rem;
   background: rgba(229, 240, 182, 0.5);
 }
-body #whyUsContainer .why-us-bottom .why-text-icon a {
+body #whyUsSection .why-us-bottom .why-text-icon a {
   padding: 0.2rem;
   color: #fff;
   font-family: "Inter";
@@ -408,10 +408,10 @@ body #whyUsContainer .why-us-bottom .why-text-icon a {
   font-weight: 700;
   line-height: 2.25rem; /* 150% */
 }
-body #whyUsContainer .why-us-bottom .why-text-icon a:hover {
+body #whyUsSection .why-us-bottom .why-text-icon a:hover {
   cursor: default;
 }
-body #partnerContainer {
+body #partnerSection {
   background-color: #FCFAFA;
   display: flex;
   padding: 5rem 8.875rem;
@@ -419,84 +419,156 @@ body #partnerContainer {
   gap: 9.375rem;
 }
 @media (max-width: 992px) {
-  body #partnerContainer {
+  body #partnerSection {
     flex-direction: column;
     gap: 1.5rem;
     padding: 1.5rem 1.5rem 2.5rem 1.5rem;
   }
 }
 @media (max-width: 1200px) {
-  body #partnerContainer {
+  body #partnerSection {
     gap: 4rem;
   }
 }
 @media (max-width: 768px) {
-  body #partnerContainer {
+  body #partnerSection {
     gap: 1.5rem;
   }
 }
-body #partnerContainer .partner-left p, body #partnerContainer .partner-left h2 {
+body #partnerSection .partner-left p, body #partnerSection .partner-left h2 {
   color: #2F241F;
   color: #2F241F;
   font-family: "Inter";
 }
-body #partnerContainer .partner-left h2 {
+body #partnerSection .partner-left h2 {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.3rem;
 }
 @media (min-width: 1200px) {
-  body #partnerContainer .partner-left h2 {
+  body #partnerSection .partner-left h2 {
     font-size: 6rem;
   }
 }
 @media (max-width: 1200px) {
-  body #partnerContainer .partner-left h2 {
+  body #partnerSection .partner-left h2 {
     font-size: 4rem;
   }
 }
 @media (max-width: 992px) {
-  body #partnerContainer .partner-left h2 {
+  body #partnerSection .partner-left h2 {
     text-align: center;
   }
 }
 @media (max-width: 768px) {
-  body #partnerContainer .partner-left h2 {
+  body #partnerSection .partner-left h2 {
     font-size: 3rem;
     letter-spacing: -0.075rem;
   }
 }
 @media (max-width: 576px) {
-  body #partnerContainer .partner-left h2 {
+  body #partnerSection .partner-left h2 {
     font-size: 1.5rem;
   }
 }
-body #partnerContainer .partner-left p {
+body #partnerSection .partner-left p {
   font-weight: 400;
   font-size: 1.5rem;
 }
 @media (max-width: 768px) {
-  body #partnerContainer .partner-left p {
+  body #partnerSection .partner-left p {
     font-size: 0.875rem;
     line-height: 1.25rem; /* 142.857% */
   }
 }
-body #partnerContainer .partner-right {
+body #partnerSection .partner-right {
   display: flex;
   justify-content: space-between;
   width: 100%;
   gap: 1rem;
 }
 @media (min-width: 1200px) {
-  body #partnerContainer .partner-right {
+  body #partnerSection .partner-right {
     display: flex;
   }
 }
 @media (max-width: 576px) {
-  body #partnerContainer .partner-right .partner-logo svg {
+  body #partnerSection .partner-right .partner-logo svg {
     width: auto;
     height: 1.5rem;
   }
+}
+body #recSection {
+  padding: 5rem 0rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: start;
+  flex-wrap: wrap-reverse;
+}
+body #recSection .rec-image-block {
+  padding: 0;
+  border: solid red;
+  display: flex;
+}
+@media (min-width: 992px) {
+  body #recSection .rec-image-block {
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  body #recSection .rec-image-block {
+    flex-direction: row;
+  }
+}
+@media (max-width: 576px) {
+  body #recSection .rec-image-block {
+    display: none;
+  }
+}
+body #recSection .rec-category-block {
+  border: solid black;
+  width: auto;
+}
+@media (max-width: 992px) {
+  body #recSection .rec-category-block {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+body #recSection .rec-category-block p, body #recSection .rec-category-block h3 {
+  color: #2F241F;
+  font-family: "Inter";
+}
+body #recSection .rec-category-block p {
+  font-weight: 400;
+}
+@media (min-width: 992px) {
+  body #recSection .rec-category-block p {
+    font-size: 1.5rem;
+    letter-spacing: -0.015rem;
+    line-height: 2.25rem; /* 150% */
+  }
+}
+body #recSection .rec-category-block h3 {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+  width: -moz-min-content;
+  width: min-content;
+}
+@media (min-width: 992px) {
+  body #recSection .rec-category-block h3 {
+    font-size: 3rem;
+    line-height: normal;
+    letter-spacing: -0.03rem;
+  }
+}
+body #recSection .rec-category-block a:hover {
+  cursor: pointer;
 }
 body #newsletter {
   padding-inline: 8.88rem;

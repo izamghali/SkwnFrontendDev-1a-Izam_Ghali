@@ -325,6 +325,35 @@ body #partnerContainer {
   align-items: center;
   gap: 9.375rem;
 }
+body #newsletter {
+  padding-inline: 8.88rem;
+  padding-block: 5rem;
+  background-color: #FCFAFA;
+}
+body #newsletter:not(input) {
+  color: #2F241F;
+}
+@media (max-width: 576px) {
+  body #newsletter {
+    padding-inline: 1rem;
+    padding-block: 2rem;
+    text-align: center;
+  }
+}
+body #newsletter input, body #newsletter button {
+  border: solid red;
+}
+@media (max-width: 768px) {
+  body #newsletter input, body #newsletter button {
+    padding: 1rem;
+  }
+}
+body #newsletter input {
+  color: #553B33;
+}
+body #newsletter button {
+  background-color: #E5F0B6;
+}
 body footer {
   display: flex;
   padding-inline: 6.25rem;

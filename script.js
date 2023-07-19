@@ -89,4 +89,7 @@ let openingSlide = () => {
     }   
 }
 // openingSlide();
-
+let productHeadingP = document.getElementById('productHeadingP');
+if (window.matchMedia('(max-width: 768px)').matches) {
+    productHeadingP.innerHTML = 'Categories';
+}

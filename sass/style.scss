@@ -520,6 +520,119 @@ body {
         }
     }
 
+    #productSection {
+        border: solid red;
+        background-color: $standard-secondary-color-1;
+        
+        @include bootstrap-lg {
+            padding-block: 5rem;
+        }
+
+        @include standard-sm {
+            padding-block: 2rem;
+            padding-inline: 0;
+        }
+        
+        .product-top {
+            border: solid green;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include bootstrap-lg {
+                padding-inline: 8.88rem;
+            }
+            
+            @include standard-sm {
+                padding-inline: 1rem;
+            }
+
+            .product-heading {
+                p, h3 {
+                    color: $standard-accent-color-1;
+                    font-family: 'Inter';
+                    line-height: normal;
+                    font-style: normal;
+                }
+
+                h3 {
+                    font-weight: 700;
+                    @include bootstrap-lg {
+                        font-size: 3rem;
+                        letter-spacing: -0.03rem;
+                    }
+
+                    @include standard-sm {
+                        font-size: 1.125rem;
+                        line-height: 1.75rem; /* 155.556% */
+                        letter-spacing: -0.01125rem;
+                    }
+                }
+
+                p {
+                    font-weight: 400;
+                    @include bootstrap-lg {
+                        font-size: 1.5rem;
+                        line-height: 2.25rem; /* 150% */
+                        letter-spacing: -0.015rem;
+                    }
+                    @include standard-sm {
+                        font-size: 0.875rem;
+                        line-height: 1.25rem; /* 142.857% */
+                        letter-spacing: -0.00875rem;
+                    }
+                }
+            }
+
+            .product-more {
+                button {
+                    color: $standard-secondary-color-1;
+                    border: none;
+                    background-color: $standard-accent-color-1;
+                    border-radius: 0.75rem;
+                    font-weight: 400;
+                    @include bootstrap-lg {
+                        padding: 0.875rem 2.25rem;
+                        font-size: 1rem;
+                    }
+
+                    @include standard-sm {
+                        font-size: 0.75rem;
+                        padding: 0.75rem 1rem;
+                    }
+                }
+            }
+            
+        }
+
+        .product-carousel {
+
+        }
+
+        .product-bottom {
+            display: flex;
+            justify-content: end;
+            gap: 1rem;
+            @include bootstrap-lg {
+                padding-inline: 8.81rem;
+            }
+            
+            @include standard-sm {
+                padding-inline: 0;
+                margin: 0;
+                justify-content: space-between;
+            }
+
+            button {
+                width: 3rem;
+                height: 3rem;
+                border: none;
+                border-radius: 50%;
+                // padding: 1rem;
+                background-color: $standard-accent-color-1;
+            }
+        }
+    }
+
     #newsletter {
         padding-inline: 8.88rem;
         padding-block: 5rem;
@@ -561,12 +674,13 @@ body {
         padding-inline: 6.25rem;
         padding-block: 5.81rem;
         gap: 1.5rem;
-
-        @include standard-lg {
-            text-align: center;
+        
+        @include standard-sm {
+            padding-block: 2.24 5.19rem;
         }
         
         @include standard-lg {
+            text-align: center;
             padding-block: 2.24rem 5.19rem;
             padding-inline: 1rem;
             display: block;

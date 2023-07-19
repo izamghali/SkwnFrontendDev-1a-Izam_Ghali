@@ -163,7 +163,7 @@ body {
             h1 {
                 color: $standard-secondary-color-1;
                 // typography
-                font-family: 'Inter', sans-serif;
+                font-family: $standard-font-family, sans-serif;
                 font-style: normal;
                 font-weight: 800;
                 line-height: normal;
@@ -331,19 +331,74 @@ body {
     }
 
     #partnerContainer {
-        // background-color: $standard-primary-color-2;
-        // height: 20vh;
-
+        background-color: $standard-primary-color-2;
         display: flex;
         padding: 5rem 8.875rem;
         align-items: center;
         gap: 9.375rem;
+        
+        @include standard-lg {
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+        }
+        @include standard-xl { gap: 4rem; }
+        @include standard-md { gap: 1.5rem; }
+
+        #partnerLeft {
+            p, h2 {
+                color: $standard-secondary-color-1;
+                color: #2F241F;
+                font-style: normal;
+                font-family: $standard-font-family;
+            }
+            h2 {
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.3rem;
+
+                @include bootstrap-xl { font-size: 6rem; }
+                @include standard-xl { font-size: 4rem; }
+                @include standard-lg { text-align: center; }
+                @include standard-md {
+                    font-size: 3rem;
+                    letter-spacing: -0.075rem;;
+                }
+                
+                @include standard-sm { font-size: 1.5rem; }
+                
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 1.5rem;
+                @include standard-md {
+                    font-size: 0.875rem;
+                    line-height: 1.25rem; /* 142.857% */
+                }
+            }
+        }
+        
+        #partnerRight {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 1rem;
+            
+            @include bootstrap-xl {
+                display: flex;
+            }
+
+            .partner-logo {
+                svg { @include standard-sm { width: auto; height: 1.5rem; } }
+            }
+        }
     }
 
     #newsletter {
         padding-inline: 8.88rem;
         padding-block: 5rem;
-        background-color: #FCFAFA; 
+        background-color: $standard-primary-color-2; 
         &:not(input) {
             color: $standard-secondary-color-1;
         }
@@ -368,12 +423,6 @@ body {
         button {
             background-color: $standard-accent-color-1;
         }
-
-        // @include bootstrap-xl { background-color:darkgrey; }
-        // @include standard-xl { background-color: orange;}
-        // @include standard-lg { background-color: deepskyblue; }
-        // @include standard-md { background-color:indianred}
-        // @include standard-sm { background-color:forestgreen; }
     }
 
     footer {

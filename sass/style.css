@@ -320,10 +320,92 @@ body #whyUsContainer #whyUsBottom .why-text-icon .why-icon-frame {
   background: #F4F4F4;
 }
 body #partnerContainer {
+  background-color: #FCFAFA;
   display: flex;
   padding: 5rem 8.875rem;
   align-items: center;
   gap: 9.375rem;
+}
+@media (max-width: 992px) {
+  body #partnerContainer {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  body #partnerContainer {
+    gap: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  body #partnerContainer {
+    gap: 1.5rem;
+  }
+}
+body #partnerContainer #partnerLeft p, body #partnerContainer #partnerLeft h2 {
+  color: #2F241F;
+  color: #2F241F;
+  font-style: normal;
+  font-family: "Inter";
+}
+body #partnerContainer #partnerLeft h2 {
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.3rem;
+}
+@media (min-width: 1200px) {
+  body #partnerContainer #partnerLeft h2 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 1200px) {
+  body #partnerContainer #partnerLeft h2 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 992px) {
+  body #partnerContainer #partnerLeft h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  body #partnerContainer #partnerLeft h2 {
+    font-size: 3rem;
+    letter-spacing: -0.075rem;
+  }
+}
+@media (max-width: 576px) {
+  body #partnerContainer #partnerLeft h2 {
+    font-size: 1.5rem;
+  }
+}
+body #partnerContainer #partnerLeft p {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  body #partnerContainer #partnerLeft p {
+    font-size: 0.875rem;
+    line-height: 1.25rem; /* 142.857% */
+  }
+}
+body #partnerContainer #partnerRight {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+@media (min-width: 1200px) {
+  body #partnerContainer #partnerRight {
+    display: flex;
+  }
+}
+@media (max-width: 576px) {
+  body #partnerContainer #partnerRight .partner-logo svg {
+    width: auto;
+    height: 1.5rem;
+  }
 }
 body #newsletter {
   padding-inline: 8.88rem;

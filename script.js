@@ -33,30 +33,46 @@ $(document).ready(function() {
     function categoryClicked() {
         $('.rec-category-desc-block').hide();
 
-        $('#recBtn1').on('click', event => {
-            $(event.currentTarget).next().slideToggle(250);
+        var $accentColor = '#E5F0B6';
+        var $primaryColor = '#FCFAFA';
+
+        $('.rec-sub-block-1').on('click', event => {
+            $(event.currentTarget).children().next().slideToggle(250);
             $('#recDesc2').slideUp(250);
             $('#recDesc3').slideUp(250);
             $('#recDesc4').slideUp(250);
+            
+            gsap.to('.rec-sub-block-1', { backgroundColor: $accentColor})
+            gsap.to('.rec-category-sub-block:not(.rec-sub-block-1)', { backgroundColor: $primaryColor})
         });
-        $('#recBtn2').on('click', event => {
-            $(event.currentTarget).next().slideToggle(250);
+        $('.rec-sub-block-2').on('click', event => {
+            $(event.currentTarget).children().next().slideToggle(250);
             $('#recDesc1').slideUp(250);
             $('#recDesc3').slideUp(250);
             $('#recDesc4').slideUp(250);
+            
+            gsap.to('.rec-sub-block-2', { backgroundColor: $accentColor})
+            gsap.to('.rec-category-sub-block:not(.rec-sub-block-2)', { backgroundColor: $primaryColor})
         });
-        $('#recBtn3').on('click', event => {
-            $(event.currentTarget).next().slideToggle(250);
-            $('#recDesc1').slideUp(250);
+        $('.rec-sub-block-3').on('click', event => {
+            $(event.currentTarget).children().next().slideToggle(250);
             $('#recDesc2').slideUp(250);
+            $('#recDesc1').slideUp(250);
             $('#recDesc4').slideUp(250);
+            
+            gsap.to('.rec-sub-block-3', { backgroundColor: $accentColor})
+            gsap.to('.rec-category-sub-block:not(.rec-sub-block-3)', { backgroundColor: $primaryColor})
         });
-        $('#recBtn4').on('click', event => {
-            $(event.currentTarget).next().slideToggle(250);
+        $('.rec-sub-block-4').on('click', event => {
+            $(event.currentTarget).children().next().slideToggle(250);
             $('#recDesc1').slideUp(250);
-            $('#recDesc2').slideUp(250);
             $('#recDesc3').slideUp(250);
+            $('#recDesc2').slideUp(250);
+            
+            gsap.to('.rec-sub-block-4', { backgroundColor: $accentColor})
+            gsap.to('.rec-category-sub-block:not(.rec-sub-block-4)', { backgroundColor: $primaryColor})
         });
+
     }
     categoryClicked();
 })

@@ -605,7 +605,20 @@ body {
         }
 
         .product-carousel {
-
+            display: flex;
+            @include bootstrap-lg {
+                // gap: 2.25rem;
+                // justify-content: space-between;
+                gap: 3rem;
+                justify-content: center;
+                padding-block: 3rem;
+            }
+            
+            @include standard-sm {
+                gap: 1rem;
+                padding-block: 1.5rem;
+                padding-inline: 1rem;
+            }
         }
 
         .product-bottom {

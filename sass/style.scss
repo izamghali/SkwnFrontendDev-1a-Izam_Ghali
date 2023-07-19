@@ -164,7 +164,6 @@ body {
                 color: $standard-secondary-color-1;
                 // typography
                 font-family: $standard-font-family, sans-serif;
-                font-style: normal;
                 font-weight: 800;
                 line-height: normal;
                 letter-spacing: -0.045rem;
@@ -294,36 +293,90 @@ body {
     }
 
     #whyUsContainer {
-        // border: solid red;
-        // padding-inline: 5%;
         background-color: $standard-secondary-color-1;
-        color: $standard-accent-color-1;
-        // padding: 5%;
+        &:not(.why-icon-frame) { color: $standard-accent-color-1; }
+        
+        @include bootstrap-lg {
+            display: flex;
+            padding: 4.5rem 9.4%;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2.5rem;
+        }
 
+        @include standard-xl {
+            padding: 3.2rem 5%;
+        }
 
-        // figma code
-        display: flex;
-        padding: 4.5rem 8.875rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 2.5rem;
+        @include standard-lg {
+            padding: 2rem 1.5rem;
+        }
 
-        #whyUsBottom {
+        .why-us-top {
+            @include standard-lg {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            span {
+                @include bootstrap-xl { font-size: 1.5rem; }
+                @include standard-lg { font-size: 1rem; }
+                @include standard-sm { font-size: 0.8rem; }
+            }
+            h2 {
+                margin-top: 2.5rem;
+                @include bootstrap-xl {
+                    font-size: 4rem;
+                    padding-right: 10%;
+                }
+                @include standard-xl {
+                    font-size: 3rem;
+                    margin-top: 1.5rem;
+                }
+                @include standard-md { font-size: 2rem; }
+                @include standard-sm { font-size: 1.5rem; }
+            }
+        }
+
+        .why-us-bottom {
             display: flex;
             align-items: center;
             gap: 4rem;
+            @include standard-lg {
+                flex-direction: column;
+                align-items: start;
+                gap: 1.25rem;
+            }
 
             .why-text-icon {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
+                
+                h3 {
+                    @include bootstrap-xl { font-size: 1.5rem; }
+                    @include standard-xl { font-size: 1.2rem; }
+                    @include standard-sm {
+                        font-size: 0.9375rem;
+                        line-height: 1.5rem; /* 160% */
+                    }
+                }
+
                 .why-icon-frame {
-                    display: flex;
                     padding: 0.5rem;
-                    align-items: flex-start;
-                    gap: 0.5rem;
                     border-radius: 0.5rem;
-                    background: #F4F4F4;
+                    background: rgba(229, 240, 182, 0.50);
+                }
+
+                a {
+                    padding: 0.2rem;
+                    color: $standard-primary-color-1;
+                    font: {
+                        family: $standard-font-family;
+                        size: 1.5rem;
+                        weight: 700;
+                    }
+                    line-height: 2.25rem; /* 150% */
+                    &:hover { cursor: default; }
                 }
             }
         }
@@ -345,11 +398,10 @@ body {
         @include standard-xl { gap: 4rem; }
         @include standard-md { gap: 1.5rem; }
 
-        #partnerLeft {
+        .partner-left {
             p, h2 {
                 color: $standard-secondary-color-1;
                 color: #2F241F;
-                font-style: normal;
                 font-family: $standard-font-family;
             }
             h2 {
@@ -379,7 +431,7 @@ body {
             }
         }
         
-        #partnerRight {
+        .partner-right {
             display: flex;
             justify-content: space-between;
             width: 100%;

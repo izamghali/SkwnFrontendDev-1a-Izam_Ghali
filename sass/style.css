@@ -604,31 +604,6 @@ body #recSection .rec-category-block .rec-category-sub-block .rec-category-desc-
     margin: 0;
   }
 }
-@media (min-width: 1200px) {
-  body #recSection {
-    background-color: darkgrey;
-  }
-}
-@media (max-width: 1200px) {
-  body #recSection {
-    background-color: orange;
-  }
-}
-@media (max-width: 992px) {
-  body #recSection {
-    background-color: deepskyblue;
-  }
-}
-@media (max-width: 768px) {
-  body #recSection {
-    background-color: indianred;
-  }
-}
-@media (max-width: 576px) {
-  body #recSection {
-    background-color: forestgreen;
-  }
-}
 body #productSection {
   background-color: #2F241F;
 }

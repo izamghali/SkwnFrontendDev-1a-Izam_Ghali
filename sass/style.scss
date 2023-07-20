@@ -551,12 +551,6 @@ body {
             }
         }
 
-        @include bootstrap-xl { background-color:darkgrey; }
-        @include standard-xl { background-color: orange;}
-        @include standard-lg { background-color: deepskyblue; }
-        @include standard-md { background-color:indianred}
-        @include standard-sm { background-color:forestgreen; }
-
     }
 
     #productSection {

@@ -236,7 +236,7 @@ body {
         }
 
         .hero-product-block {
-            background-color: red;
+            // background-color: red;
             @include standard-lg {
                 width: 100vw;
             }
@@ -267,7 +267,7 @@ body {
             }
 
             .hero-product-text-block {
-                display: flex;
+                display: none;
                 flex-direction: column;
                 @include bootstrap-lg {
                     border: solid red;
@@ -447,18 +447,22 @@ body {
     }
 
     #recSection {
-        padding: 5rem 0rem;
-        display: flex;
-        gap: 3rem;
         justify-content: start;
+        display: flex;
         flex-wrap: wrap-reverse;
+        
+        @include bootstrap-lg {
+            display: flex;
+            padding: 5rem 0rem;
+            gap: 3rem;
+        }
+
         @include standard-sm {
-            // padding: 1.5rem 1rem;
+            padding: 1.5rem 1rem;
         }
         .rec-image-block {
             padding: 0;
-            border: solid red;
-            display: none;
+            display: flex;
             @include bootstrap-lg {
                 gap: 1.5rem;
                 justify-content: space-between;
@@ -474,11 +478,14 @@ body {
         }
         
         .rec-category-block {
-            border: solid black;
-            width: auto;
+            
+            @include bootstrap-lg {
+                width: 30%;
+
+            }
 
             @include standard-lg {
-                width: 100vw;
+                // width: 100vw;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
@@ -488,18 +495,6 @@ body {
             p, h3 {
                 color: $standard-secondary-color-1;
                 font-family: $standard-font-family;
-            }
-
-            p {
-                font-weight: 400;
-                @include bootstrap-lg {
-                    font-size: 1.5rem;
-                    letter-spacing: -0.015rem;
-                    line-height: 2.25rem; /* 150% */
-                }
-                @include standard-sm {
-                    margin: 0;
-                }
             }
 
             h3 {
@@ -517,30 +512,54 @@ body {
             .rec-category-sub-block {
                 text-align: start;
                 background-color: $standard-primary-color-2;
+                padding: 1.25rem 1rem;
+                &:hover { cursor: pointer; }
                 
                 @include standard-sm {
                     width: 80%;
-                    padding: 1.25rem 1rem;
                 }
                 a {
                     text-decoration: none;
                     color: $standard-text-black-color;
                     font-family: Inter;
                     font-weight: 700;
-
-                    &:hover { cursor: pointer; }
-
                     @include standard-sm {
                         font-size: 1.125rem;
                         letter-spacing: -0.01125rem;
                     }
                 }
+
+                .rec-desc-btn {
+
+                }
+
+                .rec-category-desc-block {
+
+                    span {
+                        color: #000;
+                        font-family: Inter;
+                        font-weight: 400;
+                        @include bootstrap-lg {
+                            font-size: 0.875rem;
+                            line-height: 1.25rem; /* 142.857% */
+                        }
+                        @include standard-sm {
+                            margin: 0;
+                        }
+                    }
+                }
             }
         }
+
+        @include bootstrap-xl { background-color:darkgrey; }
+        @include standard-xl { background-color: orange;}
+        @include standard-lg { background-color: deepskyblue; }
+        @include standard-md { background-color:indianred}
+        @include standard-sm { background-color:forestgreen; }
+
     }
 
     #productSection {
-        border: solid red;
         background-color: $standard-secondary-color-1;
         
         @include bootstrap-lg {
@@ -553,7 +572,6 @@ body {
         }
         
         .product-top {
-            border: solid green;
             display: flex;
             align-items: center;
             justify-content: space-between;

@@ -235,9 +235,6 @@ body #heroSection .hero-title-block .hero-buttons-block #heroWatch {
     margin-top: 0.7rem;
   }
 }
-body #heroSection .hero-product-block {
-  background-color: red;
-}
 @media (max-width: 992px) {
   body #heroSection .hero-product-block {
     width: 100vw;
@@ -270,7 +267,7 @@ body #heroSection .hero-product-block img {
   }
 }
 body #heroSection .hero-product-block .hero-product-text-block {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 @media (min-width: 992px) {
@@ -499,16 +496,25 @@ body #partnerSection .partner-right {
   }
 }
 body #recSection {
-  padding: 5rem 0rem;
-  display: flex;
-  gap: 3rem;
   justify-content: start;
+  display: flex;
   flex-wrap: wrap-reverse;
+}
+@media (min-width: 992px) {
+  body #recSection {
+    display: flex;
+    padding: 5rem 0rem;
+    gap: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  body #recSection {
+    padding: 1.5rem 1rem;
+  }
 }
 body #recSection .rec-image-block {
   padding: 0;
-  border: solid red;
-  display: none;
+  display: flex;
 }
 @media (min-width: 992px) {
   body #recSection .rec-image-block {
@@ -526,13 +532,13 @@ body #recSection .rec-image-block {
     display: none;
   }
 }
-body #recSection .rec-category-block {
-  border: solid black;
-  width: auto;
+@media (min-width: 992px) {
+  body #recSection .rec-category-block {
+    width: 30%;
+  }
 }
 @media (max-width: 992px) {
   body #recSection .rec-category-block {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -542,21 +548,6 @@ body #recSection .rec-category-block {
 body #recSection .rec-category-block p, body #recSection .rec-category-block h3 {
   color: #2F241F;
   font-family: "Inter";
-}
-body #recSection .rec-category-block p {
-  font-weight: 400;
-}
-@media (min-width: 992px) {
-  body #recSection .rec-category-block p {
-    font-size: 1.5rem;
-    letter-spacing: -0.015rem;
-    line-height: 2.25rem; /* 150% */
-  }
-}
-@media (max-width: 576px) {
-  body #recSection .rec-category-block p {
-    margin: 0;
-  }
 }
 body #recSection .rec-category-block h3 {
   display: flex;
@@ -575,11 +566,14 @@ body #recSection .rec-category-block h3 {
 body #recSection .rec-category-block .rec-category-sub-block {
   text-align: start;
   background-color: #FCFAFA;
+  padding: 1.25rem 1rem;
+}
+body #recSection .rec-category-block .rec-category-sub-block:hover {
+  cursor: pointer;
 }
 @media (max-width: 576px) {
   body #recSection .rec-category-block .rec-category-sub-block {
     width: 80%;
-    padding: 1.25rem 1rem;
   }
 }
 body #recSection .rec-category-block .rec-category-sub-block a {
@@ -588,17 +582,54 @@ body #recSection .rec-category-block .rec-category-sub-block a {
   font-family: Inter;
   font-weight: 700;
 }
-body #recSection .rec-category-block .rec-category-sub-block a:hover {
-  cursor: pointer;
-}
 @media (max-width: 576px) {
   body #recSection .rec-category-block .rec-category-sub-block a {
     font-size: 1.125rem;
     letter-spacing: -0.01125rem;
   }
 }
+body #recSection .rec-category-block .rec-category-sub-block .rec-category-desc-block span {
+  color: #000;
+  font-family: Inter;
+  font-weight: 400;
+}
+@media (min-width: 992px) {
+  body #recSection .rec-category-block .rec-category-sub-block .rec-category-desc-block span {
+    font-size: 0.875rem;
+    line-height: 1.25rem; /* 142.857% */
+  }
+}
+@media (max-width: 576px) {
+  body #recSection .rec-category-block .rec-category-sub-block .rec-category-desc-block span {
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  body #recSection {
+    background-color: darkgrey;
+  }
+}
+@media (max-width: 1200px) {
+  body #recSection {
+    background-color: orange;
+  }
+}
+@media (max-width: 992px) {
+  body #recSection {
+    background-color: deepskyblue;
+  }
+}
+@media (max-width: 768px) {
+  body #recSection {
+    background-color: indianred;
+  }
+}
+@media (max-width: 576px) {
+  body #recSection {
+    background-color: forestgreen;
+  }
+}
 body #productSection {
-  border: solid red;
   background-color: #2F241F;
 }
 @media (min-width: 992px) {
@@ -613,7 +644,6 @@ body #productSection {
   }
 }
 body #productSection .product-top {
-  border: solid green;
   display: flex;
   align-items: center;
   justify-content: space-between;
